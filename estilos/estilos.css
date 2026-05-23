@@ -5,19 +5,13 @@
 }
 
 :root {
-    --cor-principal: darkblue;
-    --cor-texto: #333;
-    --cor-fundo-claro: #eee;
-    --cor-borda: #000;
-    --cor-sombra: gray;
-    --fonte-padrao: Arial, sans-serif;
-    --largura-maxima: 840px;
-}
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
+  --cor-principal: darkblue;
+  --cor-texto: #333;
+  --cor-fundo-claro: #eee;
+  --cor-borda: #000;
+  --cor-sombra: gray;
+  --fonte-padrao: Arial, sans-serif;
+  --largura-maxima: 840px;
 }
 
 main {
@@ -40,16 +34,18 @@ nav {
 
 nav a {
   color: white;
-  display: block;
-  padding: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 main img {
-  /* outras declarações CSS aqui */
   float: right;
+  margin-left: 1rem;
 }
 
 aside {
+  position: relative;
   width: 20rem;
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 0.2);
@@ -64,8 +60,10 @@ aside img {
   height: auto;
 }
 
-p {
-  padding: 0px;
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
 }
 
 footer {
@@ -81,13 +79,4 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
-}
-aside {
-  width: 20em;
-  text-align: center;
-}
-aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
 }
