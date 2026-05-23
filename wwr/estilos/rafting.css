@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,15 +14,30 @@
   --largura-maxima: 840px;
 }
 
-body {
-  font-family: var(--fonte-padrao);
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo-claro);
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 2px 2px 6px var(--cor-sombra);
 }
 
-header {
+
+main {
+  max-width: var(--largura-maxima);
+  margin: 2rem auto;
+  font-family: var(--fonte-padrao);
+}
+
+h1 {
   text-align: center;
-  padding: 1rem;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 5px #777;
+  color: var(--cor-principal);
 }
 
 nav {
@@ -37,11 +52,50 @@ nav a {
   text-decoration: none;
 }
 
-main {
-  max-width: var(--largura-maxima);
-  margin: 2rem auto;
+main img {
+  float: right;
+  margin-left: 1rem;
 }
 
+aside {
+  position: relative;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--cor-borda);
+  text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+ .indentacao {
+  padding-left: 2rem;
+}
 .hero {
   position: relative;
   text-align: center;
@@ -72,48 +126,10 @@ main {
   padding: 1rem;
   border-radius: 8px;
   text-align: left;
-  box-shadow: 2px 2px 6px var(--cor-sombra);
 }
-
 .hero article img {
   float: right;
   width: 150px;
   margin-left: 1rem;
   border-radius: 6px;
-}
-
-section {
-  margin: 2rem 0;
-}
-
-aside {
-  position: relative;
-  width: 20rem;
-  margin: 1rem auto;
-  border: 1px solid var(--cor-borda);
-  padding: 1rem;
-  background-color: var(--cor-fundo-claro);
-  text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-footer {
-  margin-top: 15px;
-  border-top: 1px solid var(--cor-borda);
-  text-align: center;
-  padding: 1rem;
-}
-
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: auto;
 }
