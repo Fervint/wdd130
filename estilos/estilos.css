@@ -5,19 +5,13 @@
 }
 
 :root {
-    --cor-principal: darkblue;
-    --cor-texto: #333;
-    --cor-fundo-claro: #eee;
-    --cor-borda: #000;
-    --cor-sombra: gray;
-    --fonte-padrao: Arial, sans-serif;
-    --largura-maxima: 840px;
-}
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
+  --cor-principal: darkblue;
+  --cor-texto: #333;
+  --cor-fundo-claro: #eee;
+  --cor-borda: #000;
+  --cor-sombra: gray;
+  --fonte-padrao: Arial, sans-serif;
+  --largura-maxima: 840px;
 }
 
 main {
@@ -33,22 +27,25 @@ h1 {
   color: var(--cor-principal);
 }
 
-header img {
-  border-radius: 5px;
+nav {
+  background-color: var(--cor-principal);
+  padding: 10px;
 }
 
 nav a {
   color: white;
-  display: block;
-  padding: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 main img {
-  /* outras declarações CSS aqui */
   float: right;
+  margin-left: 1rem;
 }
 
 aside {
+  position: relative;
   width: 20rem;
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 0.2);
@@ -58,35 +55,28 @@ aside {
   text-align: center;
 }
 
-.hero img {
-  width: 100%;
+aside img {
+  width: 200px;
   height: auto;
 }
 
-p {
-  padding: 0px;
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer p {
-  margin-bottom: 1rem;
-}
-
-footer nav.socialmedia a {
-  margin: 0 10px;
-}
-aside {
-  width: 20em;
-  text-align: center;
-}
 aside h2 {
   position: absolute;
   top: 47px;
   left: 150px;
+}
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--cor-borda);
+  text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
