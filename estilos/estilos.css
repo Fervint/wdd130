@@ -80,3 +80,6 @@ footer {
   background-color: #ddd;
   color: #000;
 }
+ .indentacao {
+  padding-left: 2rem;
+}
