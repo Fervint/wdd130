@@ -5,78 +5,110 @@
 }
 
 :root {
-  --cor-principal: darkblue;
-  --cor-texto: #333;
-  --cor-fundo-claro: #eee;
-  --cor-borda: #000;
-  --cor-sombra: gray;
-  --fonte-padrao: Arial, sans-serif;
-  --largura-maxima: 840px;
+  --primary-color: darkblue;
+  --accent-color: #00bfff;
+  --text-color: #333;
+  --bg-light: #f5f5f5;
+  --border-color: #000;
+  --font-main: Arial, sans-serif;
 }
 
-main {
-  max-width: var(--largura-maxima);
-  margin: 2rem auto;
-  font-family: var(--fonte-padrao);
+/* Layout geral */
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--bg-light);
 }
 
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  text-shadow: 3px 3px 5px #777;
-  color: var(--cor-principal);
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-nav {
-  background-color: var(--cor-principal);
-  padding: 10px;
+header img {
+  border-radius: 5px;
 }
 
 nav a {
   color: white;
-  display: inline-block;
-  padding: 10px 20px;
   text-decoration: none;
+  margin: 0 10px;
 }
 
-main img {
-  float: right;
-  margin-left: 1rem;
+nav a:hover {
+  text-decoration: underline;
 }
 
-aside {
+/* Hero */
+.hero {
   position: relative;
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: var(--cor-fundo-claro);
-  color: var(--cor-texto);
   text-align: center;
 }
 
-aside img {
-  width: 200px;
+.hero img {
+  width: 100%;
   height: auto;
 }
 
-aside h2 {
+.hero h1 {
   position: absolute;
-  top: 47px;
-  left: 150px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px black;
 }
 
-footer {
-  margin-top: 15px;
-  border-top: 1px solid var(--cor-borda);
-  text-align: center;
-}
-
-/* Seletores de Classe */
-.caixa {
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
-  background-color: #ddd;
-  color: #000;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 150px;
+  margin-left: 1rem;
+}
+
+/* Seções */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer nav.socialmedia a {
+  margin: 0 10px;
+}
+
+footer nav.socialmedia img {
+  width: 30px;
+  height: 30px;
 }
