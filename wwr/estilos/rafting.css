@@ -1,15 +1,18 @@
+/* RESET UNIVERSAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* VARIÁVEIS CSS */
 :root {
-  --cor-principal: steelblue;
-  --cor-texto: #000;
-  --cor-fundo: #fff;
+  --cor-principal: #3a6ea5; /* tom escuro aprovado para contraste */
+  --cor-texto: #000000;
+  --cor-fundo: #ffffff;
+  --cor-secundaria: #dcdcdc;
   --fonte-padrao: Arial, Helvetica, sans-serif;
 }
-
 
 /* HEADER */
 header {
@@ -20,19 +23,28 @@ header {
   margin: 0 auto;
 }
 
+/* NAVEGAÇÃO */
 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: var(--cor-principal);
+  padding: 1rem;
 }
 
 nav a {
   color: var(--cor-fundo);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
 }
 
+/* CORPO */
 body {
   color: var(--cor-texto);
+  background-color: var(--cor-fundo);
   font-family: var(--fonte-padrao);
 }
-
 
 /* SEÇÃO PRINCIPAL */
 main {
@@ -67,6 +79,8 @@ main {
   width: 100%;
   border-radius: 6px;
 }
+
+/* HERO (sobreposição de imagem) */
 .hero {
   position: relative;
 }
@@ -88,9 +102,6 @@ main {
   padding: 1rem;
   border-radius: 8px;
 }
-nav {
-  background-color: #3a6ea5; /* tom mais escuro */
-}
 
 /* FOOTER */
 footer {
@@ -99,7 +110,7 @@ footer {
   align-items: center;
   max-width: 840px;
   margin: 1rem auto;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--cor-secundaria);
   padding: 1rem;
 }
 
