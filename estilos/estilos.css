@@ -1,3 +1,4 @@
+/* Reset e variáveis */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@
   --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
+/* Corpo */
 body {
   font-family: var(--fonte-padrao);
   line-height: 1.5;
@@ -20,11 +22,13 @@ body {
   background-color: var(--cor-fundo);
 }
 
+/* Header, Footer e Grid centralizados */
 header, footer, .grid {
   max-width: var(--largura-maxima);
   margin: 0 auto;
 }
 
+/* Navegação com Flexbox */
 nav {
   background-color: var(--cor-principal);
   padding: 1rem;
@@ -37,8 +41,9 @@ nav a {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  font-weight: bold;
-  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 nav a:hover {
@@ -46,6 +51,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
+/* Layout em Grid */
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -54,8 +60,10 @@ nav a:hover {
   margin-top: 1rem;
 }
 
+/* Aside */
 aside {
   grid-column: 1/2;
+  grid-row: 1/2;
   background-color: var(--cor-caixa);
   border: 1px solid #ccc;
   padding: 1rem;
@@ -74,8 +82,10 @@ aside img {
   margin-bottom: 0.5rem;
 }
 
+/* Main */
 main {
   grid-column: 2/3;
+  margin: 1rem;
   background-color: var(--cor-caixa);
   border: 1px solid #ccc;
   padding: 1rem;
@@ -93,6 +103,7 @@ main img {
   border-radius: 6px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 1rem;
@@ -100,4 +111,13 @@ footer {
   border-top: 1px solid #ccc;
   font-size: 0.9rem;
   color: var(--cor-texto);
+}
+
+/* Caixa genérica */
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
