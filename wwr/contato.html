@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Fale Conosco | Rafting Aventuras</title>
+  <meta name="description" content="Entre em contato com a Rafting Aventuras para dúvidas, reservas ou sugestões.">
+  <meta name="author" content="Fabio Ricardo Da Silva Muniz">
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="imagens/logo.png" alt="Logotipo da Rafting Aventuras" width="120">
+    <nav>
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="empresa">
+      <h2>Companhia de Rafting Aventuras</h2>
+      <p>
+        123 Rua Principal de Aparecida de Goiânia<br>
+        Aparecida de Goiânia, Goiás<br>
+        <strong>+55 62 99999-9999</strong><br>
+        <a href="mailto:info@raftingaventuras.com">info@raftingaventuras.com</a>
+      </p>
+    </section>
+
+    <section class="mapa">
+      <h3>Localização</h3>
+      <div class="mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25692.16867806541!2d-49.26023006496392!3d-16.81823196753695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935efbd4bcc9396d%3A0x138ecc5abca8e4e8!2sAparecida%20de%20Goi%C3%A2nia%2C%20GO!5e0!3m2!1spt-BR!2sbr!4v1780801684536!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Propósito da Mensagem:</legend>
+          <label><input type="radio" name="proposito" value="duvida"> Dúvida Geral</label>
+          <label><input type="radio" name="proposito" value="reserva"> Pergunta sobre Reserva</label>
+          <label><input type="radio" name="proposito" value="sugestao"> Sugestão</label>
+        </fieldset>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+        <label><input type="checkbox" name="newsletter"> Quero receber a newsletter mensal</label>
+
+        <button type="submit">Entrar em Contato!</button>
+      </form>
+    </section>
+
+    <section class="equipe">
+      <h2>Estamos Aqui para Servi-lo</h2>
+      <div class="galeria-funcionarios">
+        <figure>
+          <img src="imagens/func1.jpg" alt="Perfil do Funcionário João Silva">
+          <figcaption>João Silva — Guia de Rafting</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/func2.jpg" alt="Perfil da Funcionária Maria Souza">
+          <figcaption>Maria Souza — Coordenadora de Reservas</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/func3.jpg" alt="Perfil do Funcionário Pedro Lima">
+          <figcaption>Pedro Lima — Instrutor de Segurança</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2026 Rafting Aventuras | Fabio Ricardo Da Silva Muniz</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
+    </nav>
+  </footer>
+</body>
+</html>
