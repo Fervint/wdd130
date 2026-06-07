@@ -1,4 +1,10 @@
 /* ======== Ajustes visuais e alinhamento ======== */
+:root {
+  --cor-principal: #2a5a87; /* azul escuro padronizado */
+  --cor-fundo: #ffffff;     /* branco */
+  --cor-secundaria: #dcdcdc; /* cinza claro */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f9f9f9;
@@ -7,7 +13,8 @@ body {
   padding: 0;
 }
 
-header, footer {
+header,
+footer {
   text-align: center;
 }
 
@@ -16,6 +23,7 @@ header img {
   margin: 1rem auto;
 }
 
+/* Navegação */
 nav {
   display: flex;
   justify-content: center;
@@ -25,7 +33,7 @@ nav {
 }
 
 nav a {
-  color: var(--cor-fundo);
+  color: #ffffff; /* texto branco para contraste AA */
   text-decoration: none;
   font-weight: bold;
 }
@@ -34,26 +42,32 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Conteúdo principal */
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2, section h3 {
+/* Títulos */
+section h1,
+section h2,
+section h3 {
   color: var(--cor-principal);
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/* Empresa */
 .empresa p {
   text-align: center;
   line-height: 1.6;
 }
 
+/* Mapa */
 .mapa-container {
   display: flex;
   justify-content: center;
@@ -67,6 +81,7 @@ section h2, section h3 {
   border-radius: 8px;
 }
 
+/* Formulário */
 .formulario form {
   display: flex;
   flex-direction: column;
@@ -88,7 +103,7 @@ section h2, section h3 {
 
 .formulario button {
   background-color: var(--cor-principal);
-  color: var(--cor-fundo);
+  color: #ffffff;
   border: none;
   padding: 1rem;
   border-radius: 4px;
@@ -98,9 +113,10 @@ section h2, section h3 {
 }
 
 .formulario button:hover {
-  background-color: #2a5a87;
+  background-color: #1e4f75; /* tom mais escuro para hover */
 }
 
+/* Galeria de Funcionários */
 .galeria-funcionarios {
   display: flex;
   justify-content: center;
@@ -120,33 +136,21 @@ section h2, section h3 {
   border: 3px solid var(--cor-principal);
 }
 
+/* Rodapé */
 footer {
   background-color: var(--cor-principal);
-  color: var(--cor-fundo);
+  color: #ffffff;
   padding: 1rem;
 }
 
-footer nav {
+footer nav.redes-sociais {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
-footer nav img {
+footer nav.redes-sociais img {
   width: 32px;
   height: 32px;
-}
-/* Correção de contraste para h2 sobre fundo azul */
-section h2, section h3 {
-  color: #ffffff; /* texto branco para contraste AA */
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* Ajuste opcional para fundo do header e footer */
-:root {
-  --cor-principal: #2a5a87;
-  --cor-fundo: #ffffff;
-  --cor-secundaria: #dcdcdc;
 }
