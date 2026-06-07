@@ -1,6 +1,6 @@
 /* ======== Ajustes visuais e alinhamento ======== */
 :root {
-  --cor-principal: #2a5a87; /* azul escuro padronizado */
+  --cor-principal: #1e4f75; /* azul escuro com contraste AA */
   --cor-fundo: #ffffff;     /* branco */
   --cor-secundaria: #dcdcdc; /* cinza claro */
 }
@@ -113,7 +113,7 @@ section h3 {
 }
 
 .formulario button:hover {
-  background-color: #1e4f75; /* tom mais escuro para hover */
+  background-color: #163b5a; /* tom mais escuro para hover */
 }
 
 /* Galeria de Funcionários */
