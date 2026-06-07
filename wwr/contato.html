@@ -21,6 +21,9 @@
   </header>
 
   <main>
+    <!-- Adicionado h1 conforme auditoria -->
+    <h1>Rafting Aventuras - Fale Conosco</h1>
+
     <section class="empresa">
       <h2>Companhia de Rafting Aventuras</h2>
       <p>
@@ -49,15 +52,15 @@
 
         <fieldset>
           <legend>Propósito da Mensagem:</legend>
-          <label><input type="radio" name="proposito" value="duvida"> Dúvida Geral</label>
-          <label><input type="radio" name="proposito" value="reserva"> Pergunta sobre Reserva</label>
-          <label><input type="radio" name="proposito" value="sugestao"> Sugestão</label>
+          <label for="duvida"><input type="radio" id="duvida" name="proposito" value="duvida"> Dúvida Geral</label>
+          <label for="reserva"><input type="radio" id="reserva" name="proposito" value="reserva"> Pergunta sobre Reserva</label>
+          <label for="sugestao"><input type="radio" id="sugestao" name="proposito" value="sugestao"> Sugestão</label>
         </fieldset>
 
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" rows="5"></textarea>
 
-        <label><input type="checkbox" name="newsletter"> Quero receber a newsletter mensal</label>
+        <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Quero receber a newsletter mensal</label>
 
         <button type="submit">Entrar em Contato!</button>
       </form>
@@ -84,7 +87,8 @@
 
   <footer>
     <p>©2026 Rafting Aventuras | Fabio Ricardo Da Silva Muniz</p>
-    <nav class="socialmedia">
+    <!-- Corrigido: classe redes-sociais conforme auditoria -->
+    <nav class="redes-sociais">
       <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
       <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
       <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>

@@ -137,3 +137,16 @@ footer nav img {
   width: 32px;
   height: 32px;
 }
+/* Correção de contraste para h2 sobre fundo azul */
+section h2, section h3 {
+  color: #ffffff; /* texto branco para contraste AA */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste opcional para fundo do header e footer */
+:root {
+  --cor-principal: #2a5a87;
+  --cor-fundo: #ffffff;
+  --cor-secundaria: #dcdcdc;
+}
