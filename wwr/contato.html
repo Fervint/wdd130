@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Fale Conosco | Rafting Aventuras</title>
   <meta name="description" content="Entre em contato com a Rafting Aventuras para dúvidas, reservas ou sugestões.">
+  <meta name="keywords" content="rafting, aventura, corredeiras, Goiás, esportes radicais, turismo">
   <meta name="author" content="Fabio Ricardo Da Silva Muniz">
   <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
   <header>
-    <img src="imagens/logo.png" alt="Logotipo da Rafting Aventuras" width="120">
-    <nav>
+    <img src="imagens/logo.png" alt="Logotipo da Rafting Aventuras, mostrando um bote em corredeiras" width="120">
+    <nav aria-label="Navegação principal">
       <a href="index.html">Página Inicial</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="passeios.html">Passeios</a>
@@ -21,7 +22,6 @@
   </header>
 
   <main>
-    <!-- Adicionado h1 conforme auditoria -->
     <h1>Rafting Aventuras - Fale Conosco</h1>
 
     <section class="empresa">
@@ -43,7 +43,7 @@
 
     <section class="formulario">
       <h2>Entre em Contato</h2>
-      <form>
+      <form action="#" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 
@@ -58,7 +58,7 @@
         </fieldset>
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
         <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Quero receber a newsletter mensal</label>
 
@@ -70,15 +70,15 @@
       <h2>Estamos Aqui para Servi-lo</h2>
       <div class="galeria-funcionarios">
         <figure>
-          <img src="imagens/func1.jpg" alt="Perfil do Funcionário João Silva">
+          <img src="imagens/func1.jpg" alt="João Silva, guia de rafting sorrindo com uniforme azul">
           <figcaption>João Silva — Guia de Rafting</figcaption>
         </figure>
         <figure>
-          <img src="imagens/func2.jpg" alt="Perfil da Funcionária Maria Souza">
+          <img src="imagens/func2.jpg" alt="Maria Souza, coordenadora de reservas com crachá e uniforme verde">
           <figcaption>Maria Souza — Coordenadora de Reservas</figcaption>
         </figure>
         <figure>
-          <img src="imagens/func3.jpg" alt="Perfil do Funcionário Pedro Lima">
+          <img src="imagens/func3.jpg" alt="Pedro Lima, instrutor de segurança com capacete e colete">
           <figcaption>Pedro Lima — Instrutor de Segurança</figcaption>
         </figure>
       </div>
@@ -87,12 +87,12 @@
 
   <footer>
     <p>©2026 Rafting Aventuras | Fabio Ricardo Da Silva Muniz</p>
-    <!-- Corrigido: classe redes-sociais conforme auditoria -->
-    <nav class="redes-sociais">
+    <nav class="redes-sociais" aria-label="Redes sociais">
       <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
       <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
       <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
     </nav>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
   </footer>
 </body>
 </html>

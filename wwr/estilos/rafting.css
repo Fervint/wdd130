@@ -1,8 +1,8 @@
 /* ======== Ajustes visuais e alinhamento ======== */
 :root {
   --cor-principal: #1e4f75; /* azul escuro com contraste AA */
-  --cor-fundo: #ffffff;     /* branco */
-  --cor-secundaria: #dcdcdc; /* cinza claro */
+  --cor-fundo: #ffffff;
+  --cor-secundaria: #c0c0c0; /* cinza com contraste melhorado */
 }
 
 body {
@@ -33,7 +33,7 @@ nav {
 }
 
 nav a {
-  color: #ffffff; /* texto branco para contraste AA */
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -52,10 +52,12 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
 /* Títulos */
-section h1,
-section h2,
-section h3 {
+h1, h2, h3 {
   color: var(--cor-principal);
   text-align: center;
   margin-bottom: 1rem;
@@ -101,6 +103,12 @@ section h3 {
   border-radius: 4px;
 }
 
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: 2px solid var(--cor-principal);
+  background-color: #f0f8ff;
+}
+
 .formulario button {
   background-color: var(--cor-principal);
   color: #ffffff;
@@ -113,7 +121,7 @@ section h3 {
 }
 
 .formulario button:hover {
-  background-color: #163b5a; /* tom mais escuro para hover */
+  background-color: #163b5a;
 }
 
 /* Galeria de Funcionários */
@@ -153,4 +161,26 @@ footer nav.redes-sociais {
 footer nav.redes-sociais img {
   width: 32px;
   height: 32px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .galeria-funcionarios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa-container iframe {
+    height: 300px;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
 }
