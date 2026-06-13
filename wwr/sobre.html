@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Sobre Nós | Rafting Aventuras</title>
-  <meta name="description" content="Página Sobre Nós do site Rafting Aventuras para o curso WDD 130.">
+  <meta name="description" content="Conheça a equipe e a história da Rafting Aventuras, dedicada a proporcionar experiências seguras e emocionantes.">
   <meta name="author" content="Fabio Ricardo Da Silva Muniz">
   <link rel="stylesheet" href="estilos/rafting.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
   <header>
     <img src="imagens/logo.png" alt="Logotipo da Rafting Aventuras" width="120">
-    <nav>
+    <nav aria-label="Navegação principal">
       <a href="index.html">Página Inicial</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="passeios.html">Passeios</a>
@@ -21,41 +21,34 @@
   </header>
 
   <main>
+    <h1>Sobre Nós</h1>
     <section class="historia">
-      <h2>História</h2>
-      <p>A Rafting Aventuras nasceu em 2010, fundada por amantes de esportes radicais. Desde então, temos levado milhares de pessoas a explorar rios e corredeiras com emoção e respeito ao meio ambiente.</p>
+      <h2>Nossa História</h2>
+      <p>A Rafting Aventuras nasceu com o objetivo de proporcionar experiências inesquecíveis em corredeiras, sempre com segurança e diversão.</p>
     </section>
 
-    <section class="aventura">
-      <h2>A Aventura Está te Esperando!</h2>
-      <div class="galeria">
-        <figure>
-          <img src="imagens/aventura1.png" alt="Salto do Rio Negro">
-          <figcaption>Salto do Rio Negro</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/aventura2.png" alt="Corredeira do Rio Paranapanema">
-          <figcaption>Corredeira do Rio Paranapanema</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/aventura3.jpg" alt="Corredeira do Rio Jacaré">
-          <figcaption>Corredeira do Rio Jacaré</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/aventura4.jpg" alt="Corredeira do Rio Araguaia">
-          <figcaption>Corredeira do Rio Araguaia</figcaption>
-        </figure>
-        <figure>
-          <img src="imagens/aventura5.jpg" alt="Corredeira do Rio Tocantins">
-          <figcaption>Corredeira do Rio Tocantins</figcaption>
-        </figure>
+    <section class="equipe">
+      <h2>Conheça Nossa Equipe</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="imagens/func1.jpg" alt="João Silva, guia de rafting">
+          <p>João Silva — Guia de Rafting</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/func2.jpg" alt="Maria Souza, coordenadora de reservas">
+          <p>Maria Souza — Coordenadora de Reservas</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/func3.jpg" alt="Pedro Lima, instrutor de segurança">
+          <p>Pedro Lima — Instrutor de Segurança</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <p>©2026 Rafting Aventuras | Fabio Ricardo Da Silva Muniz</p>
-    <nav class="socialmedia">
+    <nav class="redes-sociais" aria-label="Redes sociais">
       <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
       <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
       <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
